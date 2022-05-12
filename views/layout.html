@@ -12,7 +12,8 @@
   <script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.min.js"></script>
   <style>
     body:before {
-      background: url({{.WEB_BACKGROUND}}) center/cover;
+      /* background: url({{.WEB_BACKGROUND}}) center/cover; */
+      background: url'https://pic.imgdb.cn/item/62556f87239250f7c5cfae9e.jpg';
       opacity: 0.9;
     }
   </style>
@@ -26,7 +27,7 @@
   {{.LayoutContent}}
   <footer>
     <p>
-    <div>您生成了{{.unum}}个短链接</div>
+    <div class="font">您生成了{{.unum}}个短链接</div>
     <div>本站共生成了{{.gnum}}个短链接</div>
     </p>
     <p> © 2022-{{.year}} FEN sLINK | 博客：<a href="https://blog.litefen.com" target="_blank">小粉litefen</a> | 由<a
